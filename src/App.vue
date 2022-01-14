@@ -1,8 +1,9 @@
 <template>
   <div class="bg-dark">
     <div id="nav">
-      <router-link to="/">Home</router-link>
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Accueil</router-link>
+      <router-link to="/about">A Propos</router-link>
+      <router-link to="/project">Projets personnels</router-link>
     </div>
     <div class="container">
       <router-view />
@@ -37,6 +38,7 @@ body {
   text-decoration: none;
   text-align: center;
   a {
+    font-size: 20px;
     margin: 0 5px;
     color: white;
     text-decoration: none;
