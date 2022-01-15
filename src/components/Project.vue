@@ -1,6 +1,6 @@
 <template>
   <img
-    :src="data.imgUrl"
+    :src="data.image"
     :alt="data.name"
     @click="showModal = !showModal"
     class="img-list"
@@ -8,7 +8,7 @@
   <div class="modal" v-show="showModal">
     <div class="modal-content">
       <div class="modal-header">
-          <h4>{{ data.name }}</h4>
+          <h3>{{ data.name }}</h3>
         <span class="close" @click="showModal = !showModal">&times;</span>
         
       </div>
@@ -38,12 +38,15 @@ import Button from "../components/Button.vue";
     data: {
       type: Object,
       required: true,
-    },
+    }
   },
   data: function () {
     return {
       showModal: false,
     };
+  },
+  created: function () {
+    this.data.image = "https://back.melaine-gerard.fr/assets/" + this.data.image;
   },
   components: {
     Button,
