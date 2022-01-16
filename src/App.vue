@@ -4,39 +4,39 @@
       <router-link to="/">Accueil</router-link>
       <router-link to="/about">A Propos</router-link>
       <router-link to="/project">Projets personnels</router-link>
+      <router-link to="/skill">Compétences informatiques</router-link>
     </div>
     <div class="container">
-      <router-view />
+      <router-view/>
     </div>
   </div>
 </template>
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
 body {
+  width: 100%;
+  height: 100%;
   font-family: "Montserrat", sans-serif;
   padding: 0;
   margin: 0;
   color: white;
-  background: url("https://www.lifewire.com/thmb/g2jva4iFBaG5vBXNpzEs8wEVYJY=/1920x1080/filters:no_upscale():max_bytes(150000):strip_icc()/passage_wallpaper_by_trenchmaker-d4pp3zd-5919d0673df78cf5fa42884c.jpg")
-    no-repeat center center fixed;
+  background: linear-gradient( rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("https://files.melaine-gerard.fr/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-.bg-dark {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+
+
 #nav {
-  padding: 0;
   margin: 0;
   padding: 10px;
   color: white;
   text-decoration: none;
   text-align: center;
+
   a {
     font-size: 20px;
     margin: 0 5px;
@@ -44,10 +44,18 @@ body {
     text-decoration: none;
     transition: 0.3s;
   }
+
   a:hover {
     color: rgb(204, 204, 204);
   }
 }
+
+@media screen and (max-width: 768px) {
+  a {
+    display: block;
+  }
+}
+
 .container {
   width: calc(100% - 30px);
   max-width: 1080px;
