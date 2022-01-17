@@ -51,7 +51,7 @@ export default class Project extends Vue {
 <style scoped lang="scss">
 .img-list img {
   width: 100%;
-  max-width: 200px;
+  max-width: 125px;
   height: auto;
   border-radius: 20px;
 }
