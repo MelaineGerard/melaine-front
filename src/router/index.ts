@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import ProjectList from '../views/ProjectList.vue'
 import SkillList from '../views/SkillList.vue'
+import StageList from '../views/StageList.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -24,6 +25,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/skill',
     name: 'SkillList',
     component: SkillList
+  },
+  {
+    path: '/stage',
+    name: 'StageList',
+    component: StageList
   }
 ]
 

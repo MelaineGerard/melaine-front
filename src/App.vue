@@ -5,6 +5,7 @@
       <router-link to="/about">A Propos</router-link>
       <router-link to="/project">Projets personnels</router-link>
       <router-link to="/skill">Compétences informatiques</router-link>
+      <router-link to="/stage">Stages</router-link>
     </div>
     <div class="container">
       <router-view/>
@@ -14,6 +15,7 @@
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
 
 body {
   width: 100%;
@@ -39,7 +41,7 @@ body {
 
   a {
     font-size: 20px;
-    margin: 0 5px;
+    margin: 0 8px;
     color: white;
     text-decoration: none;
     transition: 0.3s;
@@ -62,3 +64,4 @@ body {
   margin: 0 auto;
 }
 </style>
+
