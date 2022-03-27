@@ -13,9 +13,9 @@
         
       </div>
       <div class="modal-body">
-        <p>
-          {{ data.description }}
-        </p>
+        <div v-html="data.description">
+
+        </div>
       </div>
       <div class="modal-footer" v-if="data.website_url">
         <a :href="data.website_url" v-if="data.website_url">
